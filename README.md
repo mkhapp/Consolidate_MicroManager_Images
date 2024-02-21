@@ -1,7 +1,7 @@
 # Consolidate_MicroManager_Images
 Consolidates MicroManager images to the same folder for ease of comparison.
 
-# *************  README  ***************
+## *************  README  ***************
 This macro set was created for Xuehua Xu in February 2024 to help her organize images taken by a basic upright microscope
 controlled by MicroManager.  The MM program saves each image in a separate folder along with extra files containing metadata.
 Xuehua needs to be able to access the images easily, so they need to be combined in jpeg- and tiff-specific folders within
