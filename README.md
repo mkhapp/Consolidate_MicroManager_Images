@@ -11,9 +11,9 @@ This series of macros searches for the subfolders containing tiffs, then consoli
 subfolders.  The directory structure and the location of the consolidated files differs between the three versions.  Read
 the README in each separate macro to determine which is most appropriate.  In short:
 
-3lvls - only works for directories with three sublevels of folders and is of limited use
-SameFolder - level agnostic, saves all images into the same folder with names based on the full pathway directory
-InSubfolders - level agnostic, saves images into a new folder created in each sublevel
+*3lvls* - only works for directories with three sublevels of folders and is of limited use /n
+*SameFolder* - level agnostic, saves all images into the same folder with names based on the full pathway directory /n
+*InSubfolders* - level agnostic, saves images into a new folder created in each sublevel /n
 
 To use any of the macros, ensure that all folders and subfolders are contained in a single directory.  Select this directory in
 the first step (a pop-up window) and then wait for the program to finish. A log window will pop up with the word "Finished!"
