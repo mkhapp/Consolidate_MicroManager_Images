@@ -15,6 +15,7 @@ the README in each separate macro to determine which is most appropriate.  In sh
 *SameFolder* - level agnostic, saves all images into the same folder with names based on the full pathway directory  
 *InSubfolders* - level agnostic, saves images into a new folder created in each sublevel  
 
-To use any of the macros, ensure that all folders and subfolders are contained in a single directory.  Select this directory in
+To use any of the macros, ensure that all folders and subfolders are contained in a single directory.  Drag and drop the selected macro onto
+the ImageJ toolbar.  In the popup window with the code, select "Run."  Select the single directory containing your subfolders and images in
 the first step (a pop-up window) and then wait for the program to finish. A log window will pop up with the word "Finished!"
 when the program is done, if no errors occurred.
