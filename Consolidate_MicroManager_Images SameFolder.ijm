@@ -29,14 +29,14 @@ File.makeDirectory(path+"2_tiffs/");
 
 function SaveAsOthers(imagepath, jpegpath, tiffpath) {
 	//this function saves the given image as both a jpeg and a tiff in the given paths; the
-	//name of the given image is based on the complete folder-subfolder pathway.
-	newname = replace(imagepath, path,"");
-	newname = replace(newname, "/", "_");
-	newname = replace(newname, ".ome.tif", "");
-	run("Bio-Formats Importer", "open=["+imagepath+"] color_mode=Default rois_import=[ROI manager] view=Hyperstack stack_order=XYCZT");
+	//name of the image is maintained as-is.
+
+	open(imagepath);
+	name = getInfo("image.title");
+	newname = split(name, "_");
 	run("Enhance Contrast", "saturated=0.35");
-	saveAs("Tiff", tiffpath+newname+".tif");
-	saveAs("Jpeg", jpegpath+newname+".jpg");
+	saveAs("Tiff", tiffpath+newname[0]+".tif");
+	saveAs("Jpeg", jpegpath+newname[0]+".jpg");
 	close("*");
 }
 
