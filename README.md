@@ -19,3 +19,8 @@ To use any of the macros, ensure that all folders and subfolders are contained i
 the ImageJ toolbar.  In the popup window with the code, select "Run."  Select the single directory containing your subfolders and images in
 the first step (a pop-up window) and then wait for the program to finish. A log window will pop up with the word "Finished!"
 when the program is done, if no errors occurred.
+
+A compatibility issue arose in September 2024 with a new installation of MicroManager on Windows 11.  The program would no longer run as the
+full path name could no longer be read correctly when creating the new name of the image.  Additionally, the BioFormats plugin was no
+longer available.  One of the versions (SameFolder) was updated to fix these issues.  The name of the jpg/tif is now based on the name of
+the OME-tiff rather than the full path; additionally the image is opened directly instead of using BioFormats.
